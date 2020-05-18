@@ -1,0 +1,20 @@
+spring:
+  redis:
+    database: 0
+    host: 172.16.64.85
+    port: 63790
+    password: kedacom#123
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: 1
+        max-idle: 8
+        min-idle: 0
+
+  datasource:
+    url: jdbc:mysql://172.16.248.23:33060/ioms?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false&allowMultiQueries=true
+    username: iomsuser
+    password: kedacom@123
+    #type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+
